@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FLUJO CUCHARA"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-12 11:56:21 a. m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC04UjVOVDhQOzIwMjUtMDMtMTI7MTE6MjY6NDEgYS4gbS47MjcwMw=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC04UjVOVDhQOzIwMjUtMDMtMTI7MTE6NTY6MjEgYS4gbS47MTsyODEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PAQUETE, TCUCHARAS" type="Integer" array="False" size=""/>
+            <declare name="SALARIOBRT, PAGA, ISR, SALARIONT" type="Real" array="False" size=""/>
+            <assign variable="ISR" expression="0.1"/>
+            <assign variable="PAGA" expression="0.50"/>
+            <input variable="PAQUETE"/>
+            <assign variable="SALARIOBRT" expression="PAQUETE*PAGA"/>
+            <assign variable="ISR" expression="SALARIOBRT*ISR"/>
+            <assign variable="SALARIONT" expression="SALARIOBRT-ISR"/>
+            <assign variable="TCUCHARAS" expression="PAQUETE*12"/>
+            <output expression="SALARIOBRT" newline="True"/>
+            <output expression="ISR" newline="True"/>
+            <output expression="SALARIONT" newline="True"/>
+            <output expression="TCUCHARAS" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
