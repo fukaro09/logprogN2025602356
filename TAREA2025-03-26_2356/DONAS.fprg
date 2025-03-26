@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DONAS"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 08:02:55 p. m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC04UjVOVDhQOzIwMjUtMDMtMjU7MDY6NTA6MzAgcC4gbS47MjcyMQ=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC04UjVOVDhQOzIwMjUtMDMtMjU7MDg6MDI6NTUgcC4gbS47MTsyODM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="DONA, CANTIDAD" type="Integer" array="False" size=""/>
+            <declare name="TOTAL" type="Real" array="False" size=""/>
+            <input variable="CANTIDAD"/>
+            <if expression="CANTIDAD &gt;=30">
+                <then>
+                    <assign variable="DONA" expression="10-1"/>
+                    <assign variable="TOTAL" expression="CANTIDAD*DONA"/>
+                    <output expression="TOTAL" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="CANTIDAD &gt;=50">
+                <then>
+                    <assign variable="DONA" expression="10-2"/>
+                    <assign variable="TOTAL" expression="CANTIDAD*DONA"/>
+                    <output expression="TOTAL" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="CANTIDAD &lt;=29">
+                <then>
+                    <assign variable="DONA" expression="10"/>
+                    <assign variable="TOTAL" expression="CANTIDAD*DONA"/>
+                    <output expression="TOTAL" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
