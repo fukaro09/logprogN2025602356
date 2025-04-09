@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factoriales"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 05:52:37 p. m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC04UjVOVDhQOzIwMjUtMDQtMDU7MDU6NTE6NTYgcC4gbS47MjcyOA=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC04UjVOVDhQOzIwMjUtMDQtMDg7MDU6NTI6MzcgcC4gbS47NTsyODQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="f, n, k" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresa un numero que sea entero y positivo&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="f" expression="1"/>
+            <if expression="n&gt;0">
+                <then>
+                    <for variable="k" start="1" end="n" direction="inc" step="1">
+                        <assign variable="f" expression="f*k"/>
+                    </for>
+                    <output expression="f" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;el numero ingresado es invalido&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

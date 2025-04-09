@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fabonacci"/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 05:41:25 p. m."/>
+        <attribute name="created" value="SHA7REVTS1RPUC04UjVOVDhQOzIwMjUtMDQtMDY7MDI6MjE6NDMgcC4gbS47MjcxOQ=="/>
+        <attribute name="edited" value="SHA7REVTS1RPUC04UjVOVDhQOzIwMjUtMDQtMDg7MDU6NDE6MjUgcC4gbS47MzsyODM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, s, a, b, c, l" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="c" expression="1"/>
+            <output expression="&quot;ingresa los digitos que quieres&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="s" start="1" end="n" direction="inc" step="1">
+                <assign variable="c" expression="a+b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+                <output expression="c" newline="False"/>
+                <output expression="&quot;,&quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
